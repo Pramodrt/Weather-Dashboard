@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/results.css')}} ">
+    <link rel="icon" href="{{ url_for('static', filename='img/fav.png') }}">
     <title>Weather Results</title>
 </head>
 <body>
-    <h3>Weather in {{ location }}</h3>
-    <h2>{{ temp }}°</h2>
-    <h3>{{ weather }}</h3>
-    <h4>Feeels like : {{ feels_like }}°</h4>
+    <div class="area">
+        <p>Weather in {{ location }}</p>
+        <p>{{ temp }}°</p>
+        <p>{{ weather }}</p>
+        <p>Feeels like : {{ feels_like }}°</p>
+    </div>
+    
 </body>
 </html>
