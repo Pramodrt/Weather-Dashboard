@@ -1,3 +1,29 @@
-.body{
-    background-image: static/back.png;
+body{
+    background-image: url('/static/img/back.png');
+}
+
+h2{
+    margin-top: 100px;
+    padding: 0px;
+    position: relative;
+    left: 30%;
+    font-family: Century Gothic;
+    font-size: 70px;
+    color: #D4D2D2;
+    font-weight: lighter;
+}
+
+
+.inputcity{
+    padding: 0px;
+    position: relative;
+    left: 40%;
+    color: #D4D2D2;
+    font-family: Century Gothic;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.blank{
+    
 }

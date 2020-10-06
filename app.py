@@ -20,9 +20,7 @@ def render_results():
     weather = data["weather"][0]['main']
     location = data['name']
 
-    return render_template('results.html',location = location, 
-                            temp = temp,feels_like = feels_like,
-                            weather = weather)
+    return render_template('results.html',location = location,temp = temp,feels_like = feels_like,weather = weather)
 
 
 def get_api_key():
@@ -37,4 +35,3 @@ def get_Weather_resullts(cityName,api_key):
 
 if __name__ == "__main__":
     app.run(debug = True)
-    print(get_Weather_resullts("Jamshedpur",get_api_key()))
